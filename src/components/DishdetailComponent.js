@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 function RenderDish({ dish }) {
 	if (dish != null) {
 		return (
-			<div className="col-12 col-md-5 m-1">
+			<div className="col-12 col-md-5 m-2">
 				<Card>
 					<CardImg width="100%" src={dish.image} alt={dish.name} />
 					<CardBody>
@@ -44,7 +44,7 @@ function RenderComments({ comments }) {
 		});
 
 		return (
-			<div className="col-12 col-md-5 m-1">
+			<div className="col-12 col-md-5 m-2">
 				<h4> Comments </h4>
 				{cmnts}
 			</div>
