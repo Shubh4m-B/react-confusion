@@ -60,9 +60,11 @@ const DishDetail = (props) => {
 	const Dish = renderDish(dish);
 	const Comment = renderComments(dish.comments);
 	return (
-		<div className="row">
-			{Dish}
-			{Comment}
+		<div className="container">
+			<div className="row">
+				{Dish}
+				{Comment}
+			</div>
 		</div>
 	);
 };
